@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://bygdhlq4i0mpt"]
+
+[ext_resource type="Texture2D" uid="uid://cold4lyr371ck" path="res://Luz.png" id="1_va1c0"]
+[ext_resource type="Script" path="res://scenas/point_light_2d.gd" id="2_8p0ci"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_q4737"]
+radius = 93.0215
+
+[node name="PointLight2D" type="PointLight2D" groups=["lights"]]
+position = Vector2(224, 174)
+energy = 0.5
+blend_mode = 2
+shadow_enabled = true
+shadow_filter_smooth = 3.2
+texture = ExtResource("1_va1c0")
+script = ExtResource("2_8p0ci")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+rotation = -0.00923927
+shape = SubResource("CircleShape2D_q4737")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_entered"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

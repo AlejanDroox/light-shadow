@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://btyhxrlhg8ttr"]
+
+[ext_resource type="Texture2D" uid="uid://dhkeoqu3ulqff" path="res://assets/interruptor.jpg" id="1_rosjb"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(21, -19)
+scale = Vector2(0.0620915, 0.0620915)
+texture = ExtResource("1_rosjb")
