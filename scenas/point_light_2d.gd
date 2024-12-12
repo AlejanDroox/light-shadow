@@ -7,15 +7,15 @@ var playera
 func _ready():
 	pass # Replace with function body.
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	pass
 
-func _on_area_entered(area: Node) -> void:
-	"""if is_occluded(area.global_position):
-		print("target detected")
-	else:
-		timer.start()
-		playera = area"""
+func _on_area_entered(_area: Node) -> void:
+	#if is_occluded(area.global_position):
+		#print("target detected")
+	#else:
+		#timer.start()
+		#playera = area
 	pass
 func is_occluded(target_position: Vector2) -> bool:
 	# Lanza un rayo desde el centro de la luz hasta el jugador

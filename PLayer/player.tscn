@@ -68,17 +68,18 @@ animations = [{
 collision_layer = 5
 script = ExtResource("1_4bbtw")
 
-[node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(2.5, 2.5)
-
 [node name="Sprite2D2" type="Sprite2D" parent="."]
 visible = false
 scale = Vector2(0.075, 0.075)
 texture = ExtResource("2_shoii")
 
 [node name="CanvasModulate" type="CanvasModulate" parent="Sprite2D2"]
+visible = false
 light_mask = 3
 visibility_layer = 3
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2.5, 2.5)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_arn6p")
@@ -109,6 +110,9 @@ scale = Vector2(0.515625, 0.515625)
 sprite_frames = SubResource("SpriteFrames_q6h3f")
 animation = &"static"
 frame_progress = 0.986204
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="."]
+remote_path = NodePath("..")
 
 [connection signal="visibility_changed" from="Sprite2D2/CanvasModulate" to="." method="_on_canvas_modulate_visibility_changed"]
 [connection signal="hidden" from="LightOccluder2D" to="." method="_on_light_occluder_2d_hidden"]
