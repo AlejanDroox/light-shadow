@@ -1,0 +1,34 @@
+[gd_scene load_steps=3 format=3 uid="uid://dlt6xcmg4c48t"]
+
+[ext_resource type="Script" path="res://scenas/game.gd" id="1_6b1ps"]
+[ext_resource type="PackedScene" uid="uid://b5f3tayjy1txl" path="res://scenas/main.tscn" id="1_25v65"]
+
+[node name="Game" type="Node"]
+script = ExtResource("1_6b1ps")
+
+[node name="main" parent="." instance=ExtResource("1_25v65")]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="main"]
+offset_right = 1028.0
+offset_bottom = 512.0
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="main/HBoxContainer"]
+layout_mode = 2
+
+[node name="SubViewport" type="SubViewport" parent="main/HBoxContainer/SubViewportContainer"]
+handle_input_locally = false
+use_hdr_2d = true
+render_target_update_mode = 4
+
+[node name="Camera2D" type="Camera2D" parent="main/HBoxContainer/SubViewportContainer/SubViewport"]
+
+[node name="SubViewportContainer2" type="SubViewportContainer" parent="main/HBoxContainer"]
+layout_mode = 2
+
+[node name="SubViewport" type="SubViewport" parent="main/HBoxContainer/SubViewportContainer2"]
+handle_input_locally = false
+use_hdr_2d = true
+render_target_update_mode = 4
+
+[node name="Camera2D" type="Camera2D" parent="main/HBoxContainer/SubViewportContainer2/SubViewport"]
+position = Vector2(516, 0)
