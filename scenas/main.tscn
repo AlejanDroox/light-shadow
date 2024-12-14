@@ -1,83 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://b5f3tayjy1txl"]
-[gd_scene load_steps=13 format=4 uid="uid://b5f3tayjy1txl"]
 
 [ext_resource type="PackedScene" uid="uid://bov30unw1c0ou" path="res://PLayer/player.tscn" id="2_mtp1a"]
 [ext_resource type="Script" path="res://addons/split_screen_2d/split_screen_2d.gd" id="3_2kloj"]
 [ext_resource type="PackedScene" uid="uid://dv40faeebomr" path="res://scenas/mapeo.tscn" id="3_k1ipn"]
 [ext_resource type="PackedScene" uid="uid://bqwcml32u5xja" path="res://PLayer/player2.tscn" id="6_70isr"]
-[ext_resource type="PackedScene" uid="uid://btyhxrlhg8ttr" path="res://scenas/interruptor.tscn" id="7_ffsed"]
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bsueo"]
-texture = ExtResource("2_2kxmq")
-0:0/0 = 0
-1:0/0 = 0
-2:0/0 = 0
-3:0/0 = 0
-4:0/0 = 0
-5:0/0 = 0
-0:1/0 = 0
-1:1/0 = 0
-2:1/0 = 0
-3:1/0 = 0
-4:1/0 = 0
-5:1/0 = 0
-0:2/0 = 0
-1:2/0 = 0
-2:2/0 = 0
-3:2/0 = 0
-4:2/0 = 0
-5:2/0 = 0
-0:3/0 = 0
-1:3/0 = 0
-2:3/0 = 0
-3:3/0 = 0
-4:3/0 = 0
-5:3/0 = 0
-0:4/0 = 0
-1:4/0 = 0
-2:4/0 = 0
-3:4/0 = 0
-4:4/0 = 0
-5:4/0 = 0
-0:5/0 = 0
-1:5/0 = 0
-2:5/0 = 0
-3:5/0 = 0
-4:5/0 = 0
-5:5/0 = 0
-
-[sub_resource type="TileSet" id="TileSet_lpxi7"]
-sources/0 = SubResource("TileSetAtlasSource_bsueo")
-
-[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_mmto5"]
-polygon = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2gb4e"]
-texture = ExtResource("1_s1bl5")
-0:0/0 = 0
-1:0/0 = 0
-2:0/0 = 0
-3:0/0 = 0
-0:1/0 = 0
-1:1/0 = 0
-2:1/0 = 0
-3:1/0 = 0
-0:2/0 = 0
-1:2/0 = 0
-2:2/0 = 0
-3:2/0 = 0
-0:3/0 = 0
-1:3/0 = 0
-2:3/0 = 0
-3:3/0 = 0
-3:3/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_mmto5")
-3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-
-[sub_resource type="TileSet" id="TileSet_dexal"]
-occlusion_layer_0/light_mask = 1
-occlusion_layer_0/sdf_collision = true
-physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_2gb4e")
 
 [node name="main" type="Node2D"]
 
@@ -104,7 +30,3 @@ top_level = true
 light_mask = 5
 visibility_layer = 5
 scale = Vector2(1.17971, 0.914694)
-
-[node name="interruptor" parent="." node_paths=PackedStringArray("light") instance=ExtResource("7_ffsed")]
-position = Vector2(504, 157)
-light = NodePath("../lights/PointLight2D5")
