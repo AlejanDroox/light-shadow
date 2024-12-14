@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://bov30unw1c0ou" path="res://PLayer/player.tscn" id="2_mtp1a"]
 [ext_resource type="Script" path="res://addons/split_screen_2d/split_screen_2d.gd" id="3_2kloj"]
-[ext_resource type="PackedScene" uid="uid://dv40faeebomr" path="res://scenas/mapeo.tscn" id="3_k1ipn"]
+[ext_resource type="PackedScene" path="res://scenas/mapeo.tscn" id="3_k1ipn"]
 [ext_resource type="PackedScene" uid="uid://bqwcml32u5xja" path="res://PLayer/player2.tscn" id="6_70isr"]
 
 [node name="main" type="Node2D"]
