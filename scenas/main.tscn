@@ -183,6 +183,5 @@ visibility_layer = 5
 position = Vector2(100, 400)
 scale = Vector2(1.17971, 0.914694)
 
-[node name="interruptor" parent="." node_paths=PackedStringArray("light") instance=ExtResource("7_ffsed")]
+[node name="interruptor" parent="." instance=ExtResource("7_ffsed")]
 position = Vector2(504, 157)
-light = NodePath("../lights/PointLight2D5")
