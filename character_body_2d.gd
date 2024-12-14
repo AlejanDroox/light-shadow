@@ -3,6 +3,7 @@ class_name player
 var colora
 var speed = 100.0
 var illuminated = false
+signal interactuar
 func _ready():
 	$AnimatedSprite2D.play("static")
 
@@ -18,6 +19,10 @@ func _physics_process(_delta):
 	else:
 		velocity.y = move_toward(velocity.y, 0, speed)
 	move_and_slide()
+func _input(event):
+	if event.is_action_pressed("interactuar1"):
+		print("asdsd")
+		emit_signal("interactuar")
 
 
 func _on_canvas_modulate_visibility_changed():
