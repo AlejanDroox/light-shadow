@@ -1,7 +1,7 @@
 class_name SplitScreen2D
 extends Node2D
 
-
+## Hello my friends
 ## Emitted when the maximum number of players has been reached or exceeded.
 ## 
 ## This signal is emitted _after_ the `player_added` signal, but before `split_screen_rebuilt`.
