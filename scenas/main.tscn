@@ -30,3 +30,6 @@ top_level = true
 light_mask = 5
 visibility_layer = 5
 scale = Vector2(1.17971, 0.914694)
+
+[node name="interruptor" parent="." instance=ExtResource("7_ffsed")]
+position = Vector2(504, 157)
