@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=4 uid="uid://b5f3tayjy1txl"]
+[gd_scene load_steps=13 format=4 uid="uid://b5f3tayjy1txl"]
 
 [ext_resource type="Script" path="res://scenas/main.gd" id="1_gjchf"]
 [ext_resource type="Texture2D" uid="uid://b8ntb5c65ww27" path="res://4colors.jpg" id="1_s1bl5"]
@@ -6,8 +6,9 @@
 [ext_resource type="PackedScene" uid="uid://bov30unw1c0ou" path="res://PLayer/player.tscn" id="2_mtp1a"]
 [ext_resource type="PackedScene" uid="uid://bygdhlq4i0mpt" path="res://scenas/light.tscn" id="4_u4erh"]
 [ext_resource type="PackedScene" uid="uid://bqwcml32u5xja" path="res://PLayer/player2.tscn" id="6_70isr"]
+[ext_resource type="PackedScene" uid="uid://btyhxrlhg8ttr" path="res://scenas/interruptor.tscn" id="7_ffsed"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3jfpl"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bsueo"]
 texture = ExtResource("2_2kxmq")
 0:0/0 = 0
 1:0/0 = 0
@@ -47,12 +48,12 @@ texture = ExtResource("2_2kxmq")
 5:5/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_lpxi7"]
-sources/0 = SubResource("TileSetAtlasSource_3jfpl")
+sources/0 = SubResource("TileSetAtlasSource_bsueo")
 
 [sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_mmto5"]
 polygon = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e04h8"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2gb4e"]
 texture = ExtResource("1_s1bl5")
 0:0/0 = 0
 1:0/0 = 0
@@ -77,7 +78,7 @@ texture = ExtResource("1_s1bl5")
 occlusion_layer_0/light_mask = 1
 occlusion_layer_0/sdf_collision = true
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_e04h8")
+sources/0 = SubResource("TileSetAtlasSource_2gb4e")
 
 [node name="main" type="Node2D"]
 script = ExtResource("1_gjchf")
@@ -181,3 +182,7 @@ light_mask = 5
 visibility_layer = 5
 position = Vector2(100, 400)
 scale = Vector2(1.17971, 0.914694)
+
+[node name="interruptor" parent="." node_paths=PackedStringArray("light") instance=ExtResource("7_ffsed")]
+position = Vector2(504, 157)
+light = NodePath("../lights/PointLight2D5")
