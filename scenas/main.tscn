@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=4 uid="uid://b5f3tayjy1txl"]
+[gd_scene load_steps=5 format=3 uid="uid://b5f3tayjy1txl"]
 
 [ext_resource type="Script" path="res://scenas/main.gd" id="1_gjchf"]
 [ext_resource type="Texture2D" uid="uid://b8ntb5c65ww27" path="res://4colors.jpg" id="1_s1bl5"]
