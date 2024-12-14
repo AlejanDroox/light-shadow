@@ -32,4 +32,4 @@ position = Vector2(100, 400)
 scale = Vector2(1.17971, 0.914694)
 
 [node name="interruptor" parent="." instance=ExtResource("7_ffsed")]
-position = Vector2(240, 147)
+position = Vector2(139, 360)
