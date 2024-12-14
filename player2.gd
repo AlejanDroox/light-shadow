@@ -2,7 +2,7 @@ extends CharacterBody2D
 class_name player2
 var colora
 var speed = 100.0
-signal interactuar
+
 func _ready():
 	pass
 
@@ -18,8 +18,3 @@ func _physics_process(_delta):
 	else:
 		velocity.y = move_toward(velocity.y, 0, speed)
 	move_and_slide()
-
-func _input(event):
-	if event.is_action_pressed("interactuar2"):
-		print("asdsd")
-		emit_signal("interactuar")

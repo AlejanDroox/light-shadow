@@ -1,25 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://btyhxrlhg8ttr"]
+[gd_scene load_steps=2 format=3 uid="uid://btyhxrlhg8ttr"]
 
-[ext_resource type="Script" path="res://scenas/interruptor.gd" id="1_ljgdb"]
-[ext_resource type="Texture2D" uid="uid://ctfarnord12sc" path="res://assets/palanca1.png" id="1_rflq2"]
+[ext_resource type="Texture2D" uid="uid://dhkeoqu3ulqff" path="res://assets/interruptor.jpg" id="1_rosjb"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_1ntgu"]
-size = Vector2(64.4211, 64.4211)
-
-[node name="interruptor" type="Node2D"]
-script = ExtResource("1_ljgdb")
-
-[node name="Area2D" type="Area2D" parent="."]
-position = Vector2(1, -1)
-scale = Vector2(0.0620915, 0.0620915)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(7.62939e-06, 7.62939e-06)
-shape = SubResource("RectangleShape2D_1ntgu")
+[node name="Node2D" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(1, -1)
-scale = Vector2(0.25, 0.25)
-texture = ExtResource("1_rflq2")
-
-[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+position = Vector2(21, -19)
+scale = Vector2(0.0620915, 0.0620915)
+texture = ExtResource("1_rosjb")
