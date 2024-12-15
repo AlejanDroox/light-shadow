@@ -64,7 +64,7 @@ animations = [{
 "speed": 8.0
 }]
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="player_shadow" type="CharacterBody2D"]
 collision_layer = 5
 script = ExtResource("1_4bbtw")
 
@@ -91,6 +91,7 @@ scale = Vector2(0.15625, 0.15625)
 texture = ExtResource("2_tjx04")
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="."]
+visible = false
 position = Vector2(1, 0)
 occluder = SubResource("OccluderPolygon2D_axgih")
 sdf_collision = false

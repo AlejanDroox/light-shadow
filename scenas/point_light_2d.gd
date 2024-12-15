@@ -5,7 +5,8 @@ extends PointLight2D
 @onready var timer := $Timer
 var playera
 func _ready():
-	pass # Replace with function body.
+	$Area2D/CollisionShape2D.scale  = Vector2(texture_scale, texture_scale)
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
 	pass

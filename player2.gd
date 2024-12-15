@@ -21,5 +21,4 @@ func _physics_process(_delta):
 
 func _input(event):
 	if event.is_action_pressed("interactuar2"):
-		print("asdsd")
 		emit_signal("interactuar")

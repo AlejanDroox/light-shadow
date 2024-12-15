@@ -23,11 +23,3 @@ func _input(event):
 	if event.is_action_pressed("interactuar1"):
 		print("asdsd")
 		emit_signal("interactuar")
-
-
-func _on_canvas_modulate_visibility_changed():
-	print("change")
-
-
-func _on_light_occluder_2d_hidden():
-	print("change")
