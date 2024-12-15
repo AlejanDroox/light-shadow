@@ -15,20 +15,24 @@ script = ExtResource("2_biilv")
 play_area = NodePath("Nivel1")
 min_players = 2
 max_players = 2
+rebuild_when_player_added = false
+rebuild_when_player_removed = false
 
 [node name="Nivel1" parent="SplitScreen2D" instance=ExtResource("3_vwb74")]
 
 [node name="CharacterBody2D" parent="SplitScreen2D" instance=ExtResource("2_mtp1a")]
+show_behind_parent = true
 top_level = true
 light_mask = 5
 visibility_layer = 5
-position = Vector2(300, 450)
+use_parent_material = true
+position = Vector2(0, 10)
 
 [node name="player2" parent="SplitScreen2D" instance=ExtResource("6_70isr")]
 top_level = true
 light_mask = 5
 visibility_layer = 5
-position = Vector2(100, 400)
+position = Vector2(50, 400)
 scale = Vector2(1.17971, 0.914694)
 
 [node name="interruptor" parent="." instance=ExtResource("7_ffsed")]
