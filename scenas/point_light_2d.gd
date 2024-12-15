@@ -5,7 +5,8 @@ extends PointLight2D
 @onready var timer := $Timer
 var playera
 func _ready():
-	pass # Replace with function body.
+	$Area2D/CollisionShape2D.scale  = Vector2(texture_scale, texture_scale)
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
 	pass
@@ -31,6 +32,8 @@ func is_occluded(target_position: Vector2) -> bool:
 
 
 func _on_timer_timeout():
+	if playera.illuminated:
+			return
 	if is_occluded(playera.global_position):
 		print("detec")
 		playera.illuminated = true
@@ -38,17 +41,35 @@ func _on_timer_timeout():
 
 
 func _on_area_2d_body_entered(body):
-	if body is player and enabled:
+	if body is player or body is player2 and enabled:
+		print(body.cotact_ligth)
+		body.cotact_ligth.append(get_instance_id())
 		if body.illuminated:
 			return
+		playera = body
 		if is_occluded(body.global_position):
 			body.illuminated = true
 			print("detec")
 		else:
-			playera = body
 			timer.start()
 
 
 func _on_area_2d_body_exited(body):
-	if body is player:
-		body.illuminated = false
+	if body is player or body is player2:
+		body.cotact_ligth.erase(get_instance_id())
+		if body.cotact_ligth.size() == 0:
+			print("salio de las luces")
+			body.illuminated = false
+		print("salio del rango de una luz")
+func off_with_player():
+	if playera:
+		if check_others_lights():
+			playera.illuminated = !playera.illuminated
+
+func check_others_lights():
+	"""Comprueba si hay otras luces dandole al player aparte de si misma"""
+	for light in playera.cotact_ligth:
+		if light != self.get_instance_id():
+			return false
+		return true
+		

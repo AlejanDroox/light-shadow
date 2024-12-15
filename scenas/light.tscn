@@ -6,7 +6,7 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_q4737"]
 radius = 93.0215
 
-[node name="PointLight2D" type="PointLight2D" groups=["lights"]]
+[node name="light" type="PointLight2D" groups=["lights"]]
 position = Vector2(224, 174)
 energy = 0.5
 blend_mode = 2

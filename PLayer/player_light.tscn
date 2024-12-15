@@ -1,0 +1,74 @@
+[gd_scene load_steps=9 format=3 uid="uid://ct84aa2thke2d"]
+
+[ext_resource type="Script" path="res://PLayer/player_light.gd" id="1_1hd5v"]
+[ext_resource type="Texture2D" uid="uid://p2rxau2ifmmb" path="res://assets/characters/shadow_static.png" id="2_xpx40"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_abve2"]
+atlas = ExtResource("2_xpx40")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ekc02"]
+atlas = ExtResource("2_xpx40")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_id7fg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_abve2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ekc02")
+}],
+"loop": true,
+"name": &"static",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_arn6p"]
+size = Vector2(20, 28)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_axgih"]
+cull_mode = 1
+polygon = PackedVector2Array(-11, 12, 11, 12, 19, -17, -19, -16)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_agv4w"]
+radius = 12.0
+
+[node name="player_light" type="CharacterBody2D"]
+collision_layer = 5
+script = ExtResource("1_1hd5v")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -5)
+scale = Vector2(0.515625, 0.515625)
+sprite_frames = SubResource("SpriteFrames_id7fg")
+animation = &"static"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2.5, 2.5)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -4)
+shape = SubResource("RectangleShape2D_arn6p")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="."]
+visible = false
+position = Vector2(1, 0)
+occluder = SubResource("OccluderPolygon2D_axgih")
+sdf_collision = false
+
+[node name="Area2D" type="Area2D" parent="."]
+light_mask = 3
+visibility_layer = 3
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_agv4w")
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="."]
+remote_path = NodePath("..")
+
+[connection signal="hidden" from="LightOccluder2D" to="." method="_on_light_occluder_2d_hidden"]
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="body_shape_entered" from="Area2D" to="." method="_on_area_2d_body_shape_entered"]

@@ -1,0 +1,44 @@
+[gd_scene load_steps=8 format=3 uid="uid://b5f3tayjy1txl"]
+
+[ext_resource type="Script" path="res://scenas/main.gd" id="1_gjchf"]
+[ext_resource type="Script" path="res://addons/split_screen_2d/split_screen_2d.gd" id="2_biilv"]
+[ext_resource type="PackedScene" uid="uid://bov30unw1c0ou" path="res://PLayer/player.tscn" id="2_mtp1a"]
+[ext_resource type="PackedScene" uid="uid://1xf6p72xwxyv" path="res://scenas/niveles/nivel_1.tscn" id="3_vwb74"]
+[ext_resource type="AudioStream" uid="uid://cdamx542t208d" path="res://Music/Music prin.mp3" id="6_vpo0p"]
+[ext_resource type="PackedScene" uid="uid://ct84aa2thke2d" path="res://PLayer/player_light.tscn" id="7_27m1e"]
+[ext_resource type="AudioStream" uid="uid://c7yn2odwd25f3" path="res://Music/Music second.mp3" id="7_uoc0c"]
+
+[node name="main" type="Node2D"]
+script = ExtResource("1_gjchf")
+
+[node name="SplitScreen2D" type="Node2D" parent="." node_paths=PackedStringArray("play_area")]
+script = ExtResource("2_biilv")
+play_area = NodePath("Nivel1")
+min_players = 2
+max_players = 2
+
+[node name="CharacterBody2D" parent="SplitScreen2D" instance=ExtResource("2_mtp1a")]
+top_level = true
+light_mask = 5
+visibility_layer = 5
+position = Vector2(368, 132)
+
+[node name="Nivel1" parent="SplitScreen2D" instance=ExtResource("3_vwb74")]
+
+[node name="Music_Menu" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_uoc0c")
+
+[node name="Musica_Juego" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_vpo0p")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Polygon2D" type="Polygon2D" parent="CanvasLayer"]
+position = Vector2(0, 322)
+color = Color(0, 0, 1, 1)
+polygon = PackedVector2Array(-1, -2, 1154, -2, 1154, 14, -2, 14)
+
+[node name="player_light" parent="CanvasLayer/Polygon2D" instance=ExtResource("7_27m1e")]
+position = Vector2(500, -151)
+
+[connection signal="finished" from="Musica_Juego" to="." method="_on_musica_juego_finished"]

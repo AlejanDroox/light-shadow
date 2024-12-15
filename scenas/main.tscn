@@ -1,14 +1,36 @@
-[gd_scene load_steps=7 format=3 uid="uid://b5f3tayjy1txl"]
+[gd_scene load_steps=11 format=3 uid="uid://b5f3tayjy1txl"]
 
 [ext_resource type="Script" path="res://scenas/main.gd" id="1_gjchf"]
 [ext_resource type="Script" path="res://addons/split_screen_2d/split_screen_2d.gd" id="2_biilv"]
 [ext_resource type="PackedScene" uid="uid://bov30unw1c0ou" path="res://PLayer/player.tscn" id="2_mtp1a"]
 [ext_resource type="PackedScene" uid="uid://1xf6p72xwxyv" path="res://scenas/niveles/nivel_1.tscn" id="3_vwb74"]
-[ext_resource type="PackedScene" uid="uid://bqwcml32u5xja" path="res://PLayer/player2.tscn" id="6_70isr"]
-[ext_resource type="PackedScene" uid="uid://btyhxrlhg8ttr" path="res://scenas/interruptor.tscn" id="7_ffsed"]
+[ext_resource type="AudioStream" uid="uid://cdamx542t208d" path="res://Music/Music prin.mp3" id="6_vpo0p"]
+[ext_resource type="PackedScene" uid="uid://ct84aa2thke2d" path="res://PLayer/player_light.tscn" id="7_27m1e"]
+[ext_resource type="AudioStream" uid="uid://c7yn2odwd25f3" path="res://Music/Music second.mp3" id="7_uoc0c"]
+[ext_resource type="FontFile" uid="uid://glg5tjrj76cr" path="res://assets/FRESHFACE.ttf" id="8_idvdi"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_xfq1a"]
+font = ExtResource("8_idvdi")
+font_size = 20
+font_color = Color(1, 0.0901961, 0.266667, 0.8)
+outline_size = 1
+outline_color = Color(0.0627451, 0.164706, 0.384314, 0.807843)
+
+[sub_resource type="LabelSettings" id="LabelSettings_dskyu"]
+font = ExtResource("8_idvdi")
+font_size = 20
+font_color = Color(1, 0.0901961, 0.266667, 0.8)
+outline_size = 1
+outline_color = Color(0.0627451, 0.164706, 0.384314, 0.807843)
 
 [node name="main" type="Node2D"]
 script = ExtResource("1_gjchf")
+
+[node name="spwan_light" type="Marker2D" parent="."]
+position = Vector2(-896, 631)
+
+[node name="spwan_shadow" type="Marker2D" parent="."]
+position = Vector2(-864, -378)
 
 [node name="SplitScreen2D" type="Node2D" parent="." node_paths=PackedStringArray("play_area")]
 script = ExtResource("2_biilv")
@@ -16,20 +38,52 @@ play_area = NodePath("Nivel1")
 min_players = 2
 max_players = 2
 
+[node name="player_shdow" parent="SplitScreen2D" node_paths=PackedStringArray("spwan", "time_label") instance=ExtResource("7_27m1e")]
+position = Vector2(503, 163)
+spwan = NodePath("../../spwan_shadow")
+time_label = NodePath("../../CanvasLayer/TimerLabel")
+
+[node name="player_light" parent="SplitScreen2D" node_paths=PackedStringArray("spwan", "time_label") instance=ExtResource("2_mtp1a")]
+top_level = true
+light_mask = 5
+visibility_layer = 5
+position = Vector2(-2253, 95)
+spwan = NodePath("../../spwan_light")
+time_label = NodePath("../../CanvasLayer/TimerLabel2")
+
 [node name="Nivel1" parent="SplitScreen2D" instance=ExtResource("3_vwb74")]
 
-[node name="CharacterBody2D" parent="SplitScreen2D" instance=ExtResource("2_mtp1a")]
-top_level = true
-light_mask = 5
-visibility_layer = 5
-position = Vector2(300, 450)
+[node name="Music_Menu" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_uoc0c")
 
-[node name="player2" parent="SplitScreen2D" instance=ExtResource("6_70isr")]
-top_level = true
-light_mask = 5
-visibility_layer = 5
-position = Vector2(100, 400)
-scale = Vector2(1.17971, 0.914694)
+[node name="Musica_Juego" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_vpo0p")
 
-[node name="interruptor" parent="." instance=ExtResource("7_ffsed")]
-position = Vector2(240, 147)
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="TimerLabel2" type="Label" parent="CanvasLayer"]
+z_index = 2
+texture_filter = 1
+offset_left = 7.0
+offset_top = 328.0
+offset_right = 227.0
+offset_bottom = 356.0
+text = "Don´t Touch the shadow"
+label_settings = SubResource("LabelSettings_xfq1a")
+
+[node name="TimerLabel" type="Label" parent="CanvasLayer"]
+z_index = 2
+texture_filter = 1
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 1397.0
+offset_bottom = 33.0
+text = "Don´t Touch the Light"
+label_settings = SubResource("LabelSettings_dskyu")
+
+[node name="Polygon2D" type="Polygon2D" parent="CanvasLayer"]
+position = Vector2(0, 322)
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(-1, -2, 1154, -2, 1154, 14, -2, 14)
+
+[connection signal="finished" from="Musica_Juego" to="." method="_on_musica_juego_finished"]

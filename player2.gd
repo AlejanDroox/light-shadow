@@ -1,5 +1,5 @@
 extends CharacterBody2D
-class_name player2
+class_name player2odl
 var colora
 var speed = 100.0
 signal interactuar
@@ -21,5 +21,4 @@ func _physics_process(_delta):
 
 func _input(event):
 	if event.is_action_pressed("interactuar2"):
-		print("asdsd")
 		emit_signal("interactuar")

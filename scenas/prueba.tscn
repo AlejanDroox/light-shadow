@@ -1,7 +1,9 @@
-[gd_scene load_steps=8 format=4 uid="uid://dn1krt7r8n6v0"]
+[gd_scene load_steps=10 format=4 uid="uid://dn1krt7r8n6v0"]
 
 [ext_resource type="Texture2D" uid="uid://b8ntb5c65ww27" path="res://4colors.jpg" id="1_jqfb1"]
-[ext_resource type="Texture2D" uid="uid://cold4lyr371ck" path="res://Luz.png" id="2_ppgnr"]
+[ext_resource type="PackedScene" uid="uid://btyhxrlhg8ttr" path="res://scenas/interruptor.tscn" id="2_8qgnx"]
+[ext_resource type="PackedScene" uid="uid://bov30unw1c0ou" path="res://PLayer/player.tscn" id="4_v1jrt"]
+[ext_resource type="PackedScene" uid="uid://bygdhlq4i0mpt" path="res://scenas/light.tscn" id="5_d7fuh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4n0pe"]
 texture = ExtResource("1_jqfb1")
@@ -56,14 +58,17 @@ tile_map_data = PackedByteArray("AAACAP//AAADAAMAAAACAAAAAAADAAMAAAACAAEAAAADAAM
 tile_set = SubResource("TileSet_e5t5b")
 use_kinematic_bodies = true
 
-[node name="PointLight2D" type="PointLight2D" parent="."]
-light_mask = 2
-visibility_layer = 2
-position = Vector2(664, 323)
-color = Color(0.831901, 0.418531, 0.487089, 1)
-energy = 4.47
-range_item_cull_mask = 3
-shadow_enabled = true
-shadow_filter = 1
-shadow_item_cull_mask = 2
-texture = ExtResource("2_ppgnr")
+[node name="interruptor2" parent="." instance=ExtResource("2_8qgnx")]
+position = Vector2(694, 216)
+
+[node name="interruptor" parent="." instance=ExtResource("2_8qgnx")]
+position = Vector2(752, 238)
+
+[node name="player_shadow" parent="." instance=ExtResource("4_v1jrt")]
+position = Vector2(834, 204)
+
+[node name="light" parent="." instance=ExtResource("5_d7fuh")]
+position = Vector2(877, 303)
+
+[node name="light2" parent="." instance=ExtResource("5_d7fuh")]
+position = Vector2(670, 297)
