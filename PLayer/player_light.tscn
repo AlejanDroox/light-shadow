@@ -1,8 +1,7 @@
-[gd_scene load_steps=11 format=3 uid="uid://ct84aa2thke2d"]
+[gd_scene load_steps=9 format=3 uid="uid://ct84aa2thke2d"]
 
-[ext_resource type="Script" path="res://character_body_2d.gd" id="1_o0ojx"]
+[ext_resource type="Script" path="res://PLayer/player_light.gd" id="1_1hd5v"]
 [ext_resource type="Texture2D" uid="uid://p2rxau2ifmmb" path="res://assets/characters/shadow_static.png" id="2_xpx40"]
-[ext_resource type="FontFile" uid="uid://glg5tjrj76cr" path="res://assets/FRESHFACE.ttf" id="3_bxktj"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_abve2"]
 atlas = ExtResource("2_xpx40")
@@ -36,16 +35,9 @@ polygon = PackedVector2Array(-11, 12, 11, 12, 19, -17, -19, -16)
 [sub_resource type="CircleShape2D" id="CircleShape2D_agv4w"]
 radius = 12.0
 
-[sub_resource type="LabelSettings" id="LabelSettings_mlhou"]
-font = ExtResource("3_bxktj")
-font_size = 20
-font_color = Color(1, 0.0901961, 0.266667, 0.8)
-outline_size = 1
-outline_color = Color(0.0627451, 0.164706, 0.384314, 0.807843)
-
 [node name="player_light" type="CharacterBody2D"]
 collision_layer = 5
-script = ExtResource("1_o0ojx")
+script = ExtResource("1_1hd5v")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -5)
@@ -76,18 +68,6 @@ shape = SubResource("CircleShape2D_agv4w")
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="."]
 remote_path = NodePath("..")
-
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="TimerLabel" type="Label" parent="CanvasLayer"]
-z_index = 2
-texture_filter = 1
-offset_left = 7.0
-offset_top = 330.0
-offset_right = 227.0
-offset_bottom = 358.0
-text = "Don´t Touch the Light"
-label_settings = SubResource("LabelSettings_mlhou")
 
 [connection signal="hidden" from="LightOccluder2D" to="." method="_on_light_occluder_2d_hidden"]
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

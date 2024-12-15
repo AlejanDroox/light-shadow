@@ -13,6 +13,7 @@ func _process(_delta):
 
 func _on_area_2d_body_entered(body:CharacterBody2D):
 	if body is player or body is player2:
+		print("conexion")
 		body.connect("interactuar", self.accion)
 
 

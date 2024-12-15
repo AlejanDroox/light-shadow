@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://b5f3tayjy1txl"]
+[gd_scene load_steps=10 format=3 uid="uid://b5f3tayjy1txl"]
 
 [ext_resource type="Script" path="res://scenas/main.gd" id="1_gjchf"]
 [ext_resource type="Script" path="res://addons/split_screen_2d/split_screen_2d.gd" id="2_biilv"]
@@ -7,6 +7,14 @@
 [ext_resource type="AudioStream" uid="uid://cdamx542t208d" path="res://Music/Music prin.mp3" id="6_vpo0p"]
 [ext_resource type="PackedScene" uid="uid://ct84aa2thke2d" path="res://PLayer/player_light.tscn" id="7_27m1e"]
 [ext_resource type="AudioStream" uid="uid://c7yn2odwd25f3" path="res://Music/Music second.mp3" id="7_uoc0c"]
+[ext_resource type="FontFile" uid="uid://glg5tjrj76cr" path="res://assets/FRESHFACE.ttf" id="8_idvdi"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_dskyu"]
+font = ExtResource("8_idvdi")
+font_size = 20
+font_color = Color(1, 0.0901961, 0.266667, 0.8)
+outline_size = 1
+outline_color = Color(0.0627451, 0.164706, 0.384314, 0.807843)
 
 [node name="main" type="Node2D"]
 script = ExtResource("1_gjchf")
@@ -16,6 +24,10 @@ script = ExtResource("2_biilv")
 play_area = NodePath("Nivel1")
 min_players = 2
 max_players = 2
+
+[node name="player_light" parent="SplitScreen2D" node_paths=PackedStringArray("time_label") instance=ExtResource("7_27m1e")]
+position = Vector2(500, 171)
+time_label = NodePath("../../CanvasLayer/TimerLabel")
 
 [node name="CharacterBody2D" parent="SplitScreen2D" instance=ExtResource("2_mtp1a")]
 top_level = true
@@ -33,12 +45,19 @@ stream = ExtResource("6_vpo0p")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
+[node name="TimerLabel" type="Label" parent="CanvasLayer"]
+z_index = 2
+texture_filter = 1
+offset_left = 6.0
+offset_top = 328.0
+offset_right = 1397.0
+offset_bottom = 356.0
+text = "Don´t Touch the Light"
+label_settings = SubResource("LabelSettings_dskyu")
+
 [node name="Polygon2D" type="Polygon2D" parent="CanvasLayer"]
 position = Vector2(0, 322)
 color = Color(0, 0, 1, 1)
 polygon = PackedVector2Array(-1, -2, 1154, -2, 1154, 14, -2, 14)
-
-[node name="player_light" parent="CanvasLayer/Polygon2D" instance=ExtResource("7_27m1e")]
-position = Vector2(500, -151)
 
 [connection signal="finished" from="Musica_Juego" to="." method="_on_musica_juego_finished"]

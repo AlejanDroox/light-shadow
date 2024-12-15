@@ -101,542 +101,427 @@ tile_set = ExtResource("2_4f8wq")
 
 [node name="interruptores" type="Node" parent="."]
 
-[node name="interruptorA1" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
+[node name="interruptorA1" parent="interruptores" instance=ExtResource("4_56oem")]
 position = Vector2(455, 142)
-lights = [NodePath("../../lights/lightA2"), NodePath("../../lights/lightA3"), NodePath("../../lights/lightA4"), null]
 
-[node name="interruptorA2" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
+[node name="interruptorA2" parent="interruptores" instance=ExtResource("4_56oem")]
 position = Vector2(220, 135)
-lights = [NodePath("../../lights/lightA2"), NodePath("../../lights/lightA3"), NodePath("../../lights/lightA4"), null]
 
-[node name="interruptorA3" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
+[node name="interruptorA3" parent="interruptores" instance=ExtResource("4_56oem")]
 position = Vector2(390, 50)
-lights = [NodePath("../../lights/lightA2"), NodePath("../../lights/lightA3"), NodePath("../../lights/lightA4"), null]
 
-[node name="interruptorA4" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
+[node name="interruptorA4" parent="interruptores" instance=ExtResource("4_56oem")]
 position = Vector2(324, 377)
 rotation = 1.309
-lights = [NodePath("../../lights/lightA2"), NodePath("../../lights/lightA3"), NodePath("../../lights/lightA4"), null]
 
-[node name="interruptorB1" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
+[node name="interruptorB1" parent="interruptores" instance=ExtResource("4_56oem")]
 position = Vector2(367, 26)
-lights = [NodePath("../../lights/lightB1"), NodePath("../../lights/lightB2")]
 
-[node name="interruptorB2" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
+[node name="interruptorB2" parent="interruptores" instance=ExtResource("4_56oem")]
 position = Vector2(229, -58)
-lights = [NodePath("../../lights/lightB1"), NodePath("../../lights/lightB2")]
 
-[node name="interruptorC1" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
+[node name="interruptorC1" parent="interruptores" instance=ExtResource("4_56oem")]
 position = Vector2(312, 334)
-lights = [NodePath("../../lights/lightC1"), NodePath("../../lights/lightC2"), NodePath("../../lights/lightC3"), NodePath("../../lights/lightC4")]
 
-[node name="interruptorC2" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
+[node name="interruptorC2" parent="interruptores" instance=ExtResource("4_56oem")]
 position = Vector2(-130, 314)
-lights = [NodePath("../../lights/lightC1"), NodePath("../../lights/lightC2"), NodePath("../../lights/lightC3"), NodePath("../../lights/lightC4")]
 
-[node name="interruptorC3" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
+[node name="interruptorC3" parent="interruptores" instance=ExtResource("4_56oem")]
 position = Vector2(167, 393)
-lights = [NodePath("../../lights/lightC1"), NodePath("../../lights/lightC2"), NodePath("../../lights/lightC3"), NodePath("../../lights/lightC4")]
 
-[node name="interruptorD1" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
+[node name="interruptorD1" parent="interruptores" instance=ExtResource("4_56oem")]
 position = Vector2(112, 85)
-lights = [NodePath("../../lights/lightD1"), NodePath("../../lights/lightD2"), NodePath("../../lights/lightD3"), NodePath("../../lights/lightD4"), NodePath("../../lights/lightD5")]
 
-[node name="interruptorD2" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
+[node name="interruptorD2" parent="interruptores" instance=ExtResource("4_56oem")]
 position = Vector2(-55, -59)
-lights = [NodePath("../../lights/lightD1"), NodePath("../../lights/lightD2"), NodePath("../../lights/lightD3"), NodePath("../../lights/lightD4"), NodePath("../../lights/lightD5")]
 
-[node name="interruptorD3" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
+[node name="interruptorD3" parent="interruptores" instance=ExtResource("4_56oem")]
 position = Vector2(211, -19)
-lights = [NodePath("../../lights/lightD1"), NodePath("../../lights/lightD2"), NodePath("../../lights/lightD3"), NodePath("../../lights/lightD4"), NodePath("../../lights/lightD5")]
 
-[node name="interruptorD4" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
+[node name="interruptorD4" parent="interruptores" instance=ExtResource("4_56oem")]
 position = Vector2(148, -251)
-lights = [NodePath("../../lights/lightD1"), NodePath("../../lights/lightD2"), NodePath("../../lights/lightD3"), NodePath("../../lights/lightD4"), NodePath("../../lights/lightD5")]
 
-[node name="interruptorE1" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
+[node name="interruptorE1" parent="interruptores" instance=ExtResource("4_56oem")]
 position = Vector2(67, 66)
-lights = [NodePath("../../lights/lightE1"), NodePath("../../lights/lightE2"), NodePath("../../lights/lightE3"), NodePath("../../lights/lightE4"), NodePath("../../lights/lightE5")]
 
-[node name="interruptorE2" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
+[node name="interruptorE2" parent="interruptores" instance=ExtResource("4_56oem")]
 position = Vector2(241, 207)
-lights = [NodePath("../../lights/lightE1"), NodePath("../../lights/lightE2"), NodePath("../../lights/lightE3"), NodePath("../../lights/lightE4"), NodePath("../../lights/lightE5")]
 
-[node name="interruptorE3" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
+[node name="interruptorE3" parent="interruptores" instance=ExtResource("4_56oem")]
 position = Vector2(-69, 150)
-lights = [NodePath("../../lights/lightE1"), NodePath("../../lights/lightE2"), NodePath("../../lights/lightE3"), NodePath("../../lights/lightE4"), NodePath("../../lights/lightE5")]
 
-[node name="interruptorF1" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
+[node name="interruptorF1" parent="interruptores" instance=ExtResource("4_56oem")]
 position = Vector2(168, 419)
-lights = [NodePath("../../lights/lightF1"), NodePath("../../lights/lightF2"), NodePath("../../lights/lightF3"), NodePath("../../lights/lightF4")]
 
-[node name="interruptorF2" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
+[node name="interruptorF2" parent="interruptores" instance=ExtResource("4_56oem")]
 position = Vector2(-224, 515)
-lights = [NodePath("../../lights/lightF1"), NodePath("../../lights/lightF2"), NodePath("../../lights/lightF3"), NodePath("../../lights/lightF4")]
 
-[node name="interruptorG1" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
+[node name="interruptorG1" parent="interruptores" instance=ExtResource("4_56oem")]
 position = Vector2(-225, 473)
-lights = [NodePath("../../lights/lightG1"), NodePath("../../lights/lightG2"), NodePath("../../lights/lightG3"), NodePath("../../lights/lightG4"), NodePath("../../lights/lightG5"), NodePath("../../lights/lightG6"), NodePath("../../lights/lightG7"), NodePath("../../lights/lightG8"), NodePath("../../lights/lightG9")]
 
-[node name="interruptorG2" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
+[node name="interruptorG2" parent="interruptores" instance=ExtResource("4_56oem")]
 position = Vector2(-228, 360)
-lights = [NodePath("../../lights/lightG1"), NodePath("../../lights/lightG2"), NodePath("../../lights/lightG3"), NodePath("../../lights/lightG4"), NodePath("../../lights/lightG5"), NodePath("../../lights/lightG6"), NodePath("../../lights/lightG7"), NodePath("../../lights/lightG8"), NodePath("../../lights/lightG9")]
 
-[node name="interruptorG3" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
+[node name="interruptorG3" parent="interruptores" instance=ExtResource("4_56oem")]
 position = Vector2(-621, 388)
-lights = [NodePath("../../lights/lightG1"), NodePath("../../lights/lightG2"), NodePath("../../lights/lightG3"), NodePath("../../lights/lightG4"), NodePath("../../lights/lightG5"), NodePath("../../lights/lightG6"), NodePath("../../lights/lightG7"), NodePath("../../lights/lightG8"), NodePath("../../lights/lightG9")]
 
-[node name="interruptorH1" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
+[node name="interruptorH1" parent="interruptores" instance=ExtResource("4_56oem")]
 position = Vector2(-661, 378)
-lights = [NodePath("../../lights/lightH1"), NodePath("../../lights/lightH2"), NodePath("../../lights/lightH3"), NodePath("../../lights/lightH4"), NodePath("../../lights/lightH5")]
 
-[node name="interruptorH2" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
+[node name="interruptorH2" parent="interruptores" instance=ExtResource("4_56oem")]
 position = Vector2(-499, 293)
-lights = [NodePath("../../lights/lightH1"), NodePath("../../lights/lightH2"), NodePath("../../lights/lightH3"), NodePath("../../lights/lightH4"), NodePath("../../lights/lightH5")]
 
-[node name="interruptorH3" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
+[node name="interruptorH3" parent="interruptores" instance=ExtResource("4_56oem")]
 position = Vector2(-693, 180)
-lights = [NodePath("../../lights/lightH1"), NodePath("../../lights/lightH2"), NodePath("../../lights/lightH3"), NodePath("../../lights/lightH4"), NodePath("../../lights/lightH5")]
 
-[node name="interruptorH4" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
+[node name="interruptorH4" parent="interruptores" instance=ExtResource("4_56oem")]
 position = Vector2(-597, 40)
-lights = [NodePath("../../lights/lightH1"), NodePath("../../lights/lightH2"), NodePath("../../lights/lightH3"), NodePath("../../lights/lightH4"), NodePath("../../lights/lightH5")]
 
-[node name="interruptorI1" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
+[node name="interruptorI1" parent="interruptores" instance=ExtResource("4_56oem")]
 position = Vector2(-88, 295)
-lights = [NodePath("../../lights/lightI1"), NodePath("../../lights/lightI2"), NodePath("../../lights/lightI3"), NodePath("../../lights/lightI4"), NodePath("../../lights/lightI5")]
 
-[node name="interruptorI2" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
+[node name="interruptorI2" parent="interruptores" instance=ExtResource("4_56oem")]
 position = Vector2(-65, 108)
-lights = [NodePath("../../lights/lightI1"), NodePath("../../lights/lightI2"), NodePath("../../lights/lightI3"), NodePath("../../lights/lightI4"), NodePath("../../lights/lightI5")]
 
-[node name="interruptorI3" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
+[node name="interruptorI3" parent="interruptores" instance=ExtResource("4_56oem")]
 position = Vector2(-576, -2)
-lights = [NodePath("../../lights/lightI1"), NodePath("../../lights/lightI2"), NodePath("../../lights/lightI3"), NodePath("../../lights/lightI4"), NodePath("../../lights/lightI5")]
 
-[node name="interruptorI4" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
+[node name="interruptorI4" parent="interruptores" instance=ExtResource("4_56oem")]
 position = Vector2(-495, -60)
-lights = [NodePath("../../lights/lightI1"), NodePath("../../lights/lightI2"), NodePath("../../lights/lightI3"), NodePath("../../lights/lightI4"), NodePath("../../lights/lightI5")]
 
-[node name="interruptorJ1" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
+[node name="interruptorJ1" parent="interruptores" instance=ExtResource("4_56oem")]
 position = Vector2(-142, 289)
-lights = [NodePath("../../lights/lightJ1"), NodePath("../../lights/lightJ2"), NodePath("../../lights/lightJ3"), NodePath("../../lights/lightJ4")]
 
-[node name="interruptorJ2" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
+[node name="interruptorJ2" parent="interruptores" instance=ExtResource("4_56oem")]
 position = Vector2(-484, 250)
-lights = [NodePath("../../lights/lightJ1"), NodePath("../../lights/lightJ2"), NodePath("../../lights/lightJ3"), NodePath("../../lights/lightJ4")]
 
-[node name="interruptorK1" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
+[node name="interruptorK1" parent="interruptores" instance=ExtResource("4_56oem")]
 position = Vector2(-52, -17)
-lights = [NodePath("../../lights/lightK1"), NodePath("../../lights/lightK2"), NodePath("../../lights/lightK3"), NodePath("../../lights/lightK4")]
 
-[node name="interruptorK2" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
+[node name="interruptorK2" parent="interruptores" instance=ExtResource("4_56oem")]
 position = Vector2(-451, -64)
-lights = [NodePath("../../lights/lightK1"), NodePath("../../lights/lightK2"), NodePath("../../lights/lightK3"), NodePath("../../lights/lightK4")]
 
-[node name="interruptorL1" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
+[node name="interruptorL1" parent="interruptores" instance=ExtResource("4_56oem")]
 position = Vector2(151, -212)
-lights = [NodePath("../../lights/lightL1"), NodePath("../../lights/lightL2"), NodePath("../../lights/lightL3"), NodePath("../../lights/lightL4"), NodePath("../../lights/lightL5"), NodePath("../../lights/lightL6")]
 
-[node name="interruptorL2" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
+[node name="interruptorL2" parent="interruptores" instance=ExtResource("4_56oem")]
 position = Vector2(-452, -195)
-lights = [NodePath("../../lights/lightL1"), NodePath("../../lights/lightL2"), NodePath("../../lights/lightL3"), NodePath("../../lights/lightL4"), NodePath("../../lights/lightL5"), NodePath("../../lights/lightL6")]
 
-[node name="interruptorM1" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
+[node name="interruptorM1" parent="interruptores" instance=ExtResource("4_56oem")]
 position = Vector2(-495, -198)
-lights = [NodePath("../../lights/lightM1"), NodePath("../../lights/lightM2"), NodePath("../../lights/lightM3"), NodePath("../../lights/lightM4"), NodePath("../../lights/lightM5"), NodePath("../../lights/lightM6")]
 
-[node name="interruptorM2" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
+[node name="interruptorM2" parent="interruptores" instance=ExtResource("4_56oem")]
 position = Vector2(-913, -59)
-lights = [NodePath("../../lights/lightM1"), NodePath("../../lights/lightM2"), NodePath("../../lights/lightM3"), NodePath("../../lights/lightM4"), NodePath("../../lights/lightM5"), NodePath("../../lights/lightM6")]
 
-[node name="interruptorM3" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
+[node name="interruptorM3" parent="interruptores" instance=ExtResource("4_56oem")]
 position = Vector2(-495, -78)
-lights = [NodePath("../../lights/lightM1"), NodePath("../../lights/lightM2"), NodePath("../../lights/lightM3"), NodePath("../../lights/lightM4"), NodePath("../../lights/lightM5"), NodePath("../../lights/lightM6")]
 
-[node name="interruptorN1" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
+[node name="interruptorN1" parent="interruptores" instance=ExtResource("4_56oem")]
 position = Vector2(-692, 82)
-lights = [NodePath("../../lights/lightN1"), NodePath("../../lights/lightN2"), NodePath("../../lights/lightN3"), NodePath("../../lights/lightN4"), NodePath("../../lights/lightN5"), NodePath("../../lights/lightN6"), NodePath("../../lights/lightN7"), NodePath("../../lights/lightN8"), NodePath("../../lights/lightN9"), NodePath("../../lights/lightN10"), NodePath("../../lights/lightN11"), NodePath("../../lights/lightN12"), NodePath("../../lights/lightN13")]
 
-[node name="interruptorN2" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
+[node name="interruptorN2" parent="interruptores" instance=ExtResource("4_56oem")]
 position = Vector2(-843, -60)
-lights = [NodePath("../../lights/lightN1"), NodePath("../../lights/lightN2"), NodePath("../../lights/lightN3"), NodePath("../../lights/lightN4"), NodePath("../../lights/lightN5"), NodePath("../../lights/lightN6"), NodePath("../../lights/lightN7"), NodePath("../../lights/lightN8"), NodePath("../../lights/lightN9"), NodePath("../../lights/lightN10"), NodePath("../../lights/lightN11"), NodePath("../../lights/lightN12"), NodePath("../../lights/lightN13")]
 
 [node name="lights" type="Node" parent="."]
 
 [node name="lightB1" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(270, -41)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightB2" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(306, 38)
 texture_scale = 0.85
-collision_layer_to_check = null
 
 [node name="lightA2" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(377, 149)
 texture_scale = 0.88
-collision_layer_to_check = null
 
 [node name="lightA3" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(281, 173)
 texture_scale = 0.8
-collision_layer_to_check = null
 
 [node name="lightA4" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(377, 311)
 texture_scale = 0.9
-collision_layer_to_check = null
 
 [node name="lightC1" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(143, 354)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightC2" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(24, 354)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightC3" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-94, 353)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightC4" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(263, 354)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightD1" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(153, -50)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightD2" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(8, -39)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightD3" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(82, 15)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightD4" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(180, -123)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightD5" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(200, -230)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightE1" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(162, 137)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightE2" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(79, 137)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightE3" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(170, 216)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightE4" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(82, 226)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightE5" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-31, 129)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightF1" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(125, 471)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightF2" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(13, 496)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightF3" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-95, 494)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightF4" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-191, 483)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightG1" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-292, 508)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightG2" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-292, 434)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightG3" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-268, 414)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightG4" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-406, 433)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightG5" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-404, 513)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightG6" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-500, 433)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightG7" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-500, 503)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightG8" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-610, 428)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightG9" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-610, 486)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightH1" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-646, 328)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightH2" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-638, 213)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightH3" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-638, 111)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightH4" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-558, 261)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightH5" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-620, 14)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightI1" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-119, 219)
 texture_scale = 0.85
-collision_layer_to_check = null
 
 [node name="lightI2" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-146, 82)
 texture_scale = 0.85
-collision_layer_to_check = null
 
 [node name="lightI3" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-293, 83)
 texture_scale = 0.85
-collision_layer_to_check = null
 
 [node name="lightI4" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-445, 122)
 texture_scale = 0.85
-collision_layer_to_check = null
 
 [node name="lightI5" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-484, 14)
 texture_scale = 0.85
-collision_layer_to_check = null
 
 [node name="lightJ1" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-203, 253)
 texture_scale = 0.85
-collision_layer_to_check = null
 
 [node name="lightJ2" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-280, 313)
 texture_scale = 0.85
-collision_layer_to_check = null
 
 [node name="lightJ3" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-345, 251)
 texture_scale = 0.85
-collision_layer_to_check = null
 
 [node name="lightJ4" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-420, 274)
 texture_scale = 0.85
-collision_layer_to_check = null
 
 [node name="lightK1" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-125, -72)
 texture_scale = 0.85
-collision_layer_to_check = null
 
 [node name="lightK2" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-129, 10)
 texture_scale = 0.85
-collision_layer_to_check = null
 
 [node name="lightK3" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-271, -35)
 texture_scale = 0.85
-collision_layer_to_check = null
 
 [node name="lightK4" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-421, -26)
 texture_scale = 0.85
-collision_layer_to_check = null
 
 [node name="lightL1" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(83, -233)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightL2" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-38, -231)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightL3" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-157, -230)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightL4" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-276, -229)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightL5" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-396, -230)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightL6" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-470, -253)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightM1" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-552, -172)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightM2" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-663, -196)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightM3" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-761, -158)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightM4" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-863, -196)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightM5" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-880, -126)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightM6" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-481, -136)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightN1" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-790, 175)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightN2" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-780, 72)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightN3" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-837, 25)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightN4" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-938, 30)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightN5" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-982, 93)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightN6" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-969, 184)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightN7" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-876, 125)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightN8" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-880, 217)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightN9" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-929, 294)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightN10" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-813, 283)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightN11" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-723, 130)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightN12" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-1031, 130)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="lightN13" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-879, -7)
 texture_scale = 0.65
-collision_layer_to_check = null
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
