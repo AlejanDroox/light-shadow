@@ -222,6 +222,18 @@ position = Vector2(-692, 82)
 [node name="interruptorN2" parent="interruptores" instance=ExtResource("4_56oem")]
 position = Vector2(-843, -60)
 
+[node name="interruptorO1" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
+position = Vector2(-1261, 425)
+lights = [NodePath("../../lights/lightO1"), NodePath("../../lights/lightO2"), NodePath("../../lights/lightO3"), NodePath("../../lights/lightO4"), NodePath("../../lights/lightO5")]
+
+[node name="interruptorO2" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
+position = Vector2(-846, 315)
+lights = [NodePath("../../lights/lightO1"), NodePath("../../lights/lightO2"), NodePath("../../lights/lightO3"), NodePath("../../lights/lightO4"), NodePath("../../lights/lightO5")]
+
+[node name="interruptorO3" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
+position = Vector2(-1269, 337)
+lights = [NodePath("../../lights/lightO1"), NodePath("../../lights/lightO2"), NodePath("../../lights/lightO3"), NodePath("../../lights/lightO4"), NodePath("../../lights/lightO5")]
+
 [node name="lights" type="Node" parent="."]
 
 [node name="lightB1" parent="lights" instance=ExtResource("2_bmcxi")]
@@ -524,8 +536,32 @@ texture_scale = 0.65
 position = Vector2(-879, -7)
 texture_scale = 0.65
 
+[node name="lightN14" parent="lights" instance=ExtResource("2_bmcxi")]
+position = Vector2(-879, 289)
+texture_scale = 0.65
+
 [node name="lightRespawnL" parent="lights" instance=ExtResource("2_bmcxi")]
 position = Vector2(-891, 680)
 texture_scale = 2.4
+
+[node name="lightO3" parent="lights" instance=ExtResource("2_bmcxi")]
+position = Vector2(-999, 453)
+texture_scale = 0.65
+
+[node name="lightO4" parent="lights" instance=ExtResource("2_bmcxi")]
+position = Vector2(-1105, 428)
+texture_scale = 0.65
+
+[node name="lightO5" parent="lights" instance=ExtResource("2_bmcxi")]
+position = Vector2(-1197, 442)
+texture_scale = 0.65
+
+[node name="lightO1" parent="lights" instance=ExtResource("2_bmcxi")]
+position = Vector2(-880, 387)
+texture_scale = 0.65
+
+[node name="lightO2" parent="lights" instance=ExtResource("2_bmcxi")]
+position = Vector2(-891, 453)
+texture_scale = 0.65
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
