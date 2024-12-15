@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c7yn2odwd25f3"
+path="res://.godot/imported/Music second.mp3-d42035928622e2b9b374ace8731433e4.mp3str"
+
+[deps]
+
+source_file="res://Music/Music second.mp3"
+dest_files=["res://.godot/imported/Music second.mp3-d42035928622e2b9b374ace8731433e4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
