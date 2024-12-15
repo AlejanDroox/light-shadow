@@ -15,9 +15,17 @@ func _on_area_2d_body_entered(body:CharacterBody2D):
 	if body is player or body is player2:
 		body.connect("interactuar", self.accion)
 
+
 func accion():
+	
 	for light in lights:
+		print(light)
 		if light:
 			light.enabled = !light.enabled
-			if light.playera:
-				light.playera.illuminated = false
+			light.off_with_player()
+
+
+
+func _on_area_2d_body_exited(body):
+	if body is player or body is player2:
+		body.interactuar.disconnect(accion)

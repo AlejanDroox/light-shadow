@@ -46,20 +46,22 @@ func _on_area_2d_body_entered(body:player):
 		body.cotact_ligth.append(get_instance_id())
 		if body.illuminated:
 			return
+		playera = body
 		if is_occluded(body.global_position):
 			body.illuminated = true
 			print("detec")
 		else:
-			playera = body
 			timer.start()
 
 
 func _on_area_2d_body_exited(body):
 	if body is player:
-		print(body.cotact_ligth.size())
+		body.cotact_ligth.erase(get_instance_id())
 		if body.cotact_ligth.size() == 0:
 			print("salio de las luces")
 			body.illuminated = false
 		print("salio del rango de una luz")
-		body.cotact_ligth.erase(get_instance_id())
-		playera = null
+func off_with_player():
+	if playera:
+			playera.illuminated = !playera.illuminated
+		

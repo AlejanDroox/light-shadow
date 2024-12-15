@@ -47,6 +47,7 @@ func _process(delta: float) -> void:
 # Función para activar el temporizador
 func activar_temporizador():
 	if !temporizador_activado:
+		tiempo_restante = tiempo_total
 		temporizador_activado = true
 
 # Función para detener el temporizador
