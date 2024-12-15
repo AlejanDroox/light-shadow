@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://b5f3tayjy1txl"]
+[gd_scene load_steps=8 format=3 uid="uid://b5f3tayjy1txl"]
 
 [ext_resource type="Script" path="res://scenas/main.gd" id="1_gjchf"]
 [ext_resource type="Script" path="res://addons/split_screen_2d/split_screen_2d.gd" id="2_biilv"]
 [ext_resource type="PackedScene" uid="uid://bov30unw1c0ou" path="res://PLayer/player.tscn" id="2_mtp1a"]
 [ext_resource type="PackedScene" uid="uid://1xf6p72xwxyv" path="res://scenas/niveles/nivel_1.tscn" id="3_vwb74"]
 [ext_resource type="PackedScene" uid="uid://bqwcml32u5xja" path="res://PLayer/player2.tscn" id="6_70isr"]
+[ext_resource type="AudioStream" uid="uid://cdamx542t208d" path="res://Music/Music prin.mp3" id="6_vpo0p"]
 [ext_resource type="AudioStream" uid="uid://c7yn2odwd25f3" path="res://Music/Music second.mp3" id="7_uoc0c"]
 
 [node name="main" type="Node2D"]
@@ -33,8 +34,8 @@ scale = Vector2(1.17971, 0.914694)
 
 [node name="Music_Menu" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("7_uoc0c")
-autoplay = true
 
 [node name="Musica_Juego" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_vpo0p")
 
-[connection signal="finished" from="Music_Menu" to="." method="_on_music_menu_finished"]
+[connection signal="finished" from="Musica_Juego" to="." method="_on_musica_juego_finished"]

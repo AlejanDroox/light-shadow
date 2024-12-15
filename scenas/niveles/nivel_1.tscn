@@ -304,9 +304,8 @@ sources/0 = SubResource("TileSetAtlasSource_qt1jm")
 [node name="Nivel1" type="Node2D"]
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
-visible = false
 position = Vector2(199, 86)
-color = Color(0, 0, 0, 1)
+color = Color(0.295867, 0.295866, 0.295866, 1)
 
 [node name="tile map" type="Node" parent="."]
 
