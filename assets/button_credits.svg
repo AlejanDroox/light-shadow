@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="44.452927mm"
+   height="11.827168mm"
+   viewBox="0 0 168.01107 44.701108"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="UI_light_shadow.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="281.4285"
+     inkscape:cy="235.113"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-250.00002,-341.99997)">
+    <rect
+       style="fill:#521744;fill-opacity:1;fill-rule:evenodd;stroke:#001700;stroke-width:0.561733;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       id="rect158-7"
+       width="167.44933"
+       height="44.139359"
+       x="250.28088"
+       y="342.28085" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:45.3543px;line-height:58.2048px;font-family:FRESHFACE;-inkscape-font-specification:'FRESHFACE, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#a01744;fill-opacity:1;fill-rule:evenodd;stroke:#001700;stroke-width:1.13386;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       x="331.88419"
+       y="379.06308"
+       id="text158-2"><tspan
+         sodipodi:role="line"
+         id="tspan158-2"
+         x="331.88419"
+         y="379.06308">Credits</tspan></text>
+  </g>
+</svg>

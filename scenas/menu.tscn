@@ -1,0 +1,42 @@
+[gd_scene load_steps=5 format=3 uid="uid://ch3c32x4e5iq4"]
+
+[ext_resource type="Script" path="res://menu.gd" id="1_03i0q"]
+[ext_resource type="Texture2D" uid="uid://cam0wo3rhkbud" path="res://assets/UI/logo_LS.png" id="2_nurbm"]
+[ext_resource type="Texture2D" uid="uid://ckqjm4ots2yqb" path="res://assets/UI/play.png" id="3_vp5di"]
+[ext_resource type="Texture2D" uid="uid://4kwthew687op" path="res://assets/UI/credits-2.svg" id="4_gb1h5"]
+
+[node name="Menu" type="Node2D"]
+script = ExtResource("1_03i0q")
+
+[node name="LogoLs" type="Sprite2D" parent="."]
+position = Vector2(561, 156)
+scale = Vector2(0.566339, 0.595385)
+texture = ExtResource("2_nurbm")
+
+[node name="Play" type="Sprite2D" parent="."]
+position = Vector2(558, 309)
+texture = ExtResource("3_vp5di")
+
+[node name="Credits-2" type="Sprite2D" parent="."]
+position = Vector2(562, 415)
+texture = ExtResource("4_gb1h5")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Play" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 473.0
+offset_top = 286.0
+offset_right = 643.0
+offset_bottom = 331.0
+
+[node name="Credits" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 478.0
+offset_top = 392.0
+offset_right = 647.0
+offset_bottom = 437.0

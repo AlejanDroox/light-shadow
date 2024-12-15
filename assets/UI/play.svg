@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="44.604305mm"
+   height="11.978533mm"
+   viewBox="0 0 168.58321 45.273193"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="UI_light_shadow.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="281.4285"
+     inkscape:cy="235.113"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-249.46281,-287.21286)">
+    <path
+       id="text158"
+       style="font-size:45.3543px;line-height:58.2048px;font-family:FRESHFACE;-inkscape-font-specification:'FRESHFACE, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#a01744;fill-rule:evenodd;stroke:#001700;stroke-width:1.13386;paint-order:markers stroke fill"
+       d="m 296.98239,324.56201 h -9.25228 l -0.13607,-31.74801 21.36188,0.22677 v 19.77448 l -12.20031,0.18141 z m -0.22678,-26.12408 v 9.75118 h 3.53764 l -0.0454,-9.75118 z m 33.19934,26.12408 H 312.44819 L 311.99465,292.814 h 8.4359 l 0.27213,24.53668 9.25227,0.0453 z m 10.114,-11.51999 -0.27212,11.51999 h -8.29984 l 1.40598,-31.47588 19.04881,-0.0907 1.40598,31.56659 h -9.11621 l -0.31748,-11.47464 z m 3.6737,-14.87621 h -3.35622 l -0.36283,10.29542 h 4.12724 z m 18.5046,11.20251 h -4.08189 l -2.58519,-2.13165 V 292.814 h 8.70802 v 11.06645 l 4.12724,0.0453 0.0454,-11.1118 h 8.34519 l 0.13606,14.33196 -2.72126,2.31307 h -3.67369 v 15.10298 h -8.29984 z m -112.2175,-21.58853 h 167.44933 v 44.13935 H 250.02975 Z" />
+  </g>
+</svg>
