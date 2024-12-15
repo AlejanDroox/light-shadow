@@ -32,14 +32,18 @@ func is_occluded(target_position: Vector2) -> bool:
 
 
 func _on_timer_timeout():
+	if playera.illuminated:
+			return
 	if is_occluded(playera.global_position):
 		print("detec")
 		playera.illuminated = true
 		timer.stop()
 
 
-func _on_area_2d_body_entered(body):
+func _on_area_2d_body_entered(body:player):
 	if body is player and enabled:
+		print(body.cotact_ligth)
+		body.cotact_ligth.append(get_instance_id())
 		if body.illuminated:
 			return
 		if is_occluded(body.global_position):
@@ -52,4 +56,10 @@ func _on_area_2d_body_entered(body):
 
 func _on_area_2d_body_exited(body):
 	if body is player:
-		body.illuminated = false
+		print(body.cotact_ligth.size())
+		if body.cotact_ligth.size() == 0:
+			print("salio de las luces")
+			body.illuminated = false
+		print("salio del rango de una luz")
+		body.cotact_ligth.erase(get_instance_id())
+		playera = null

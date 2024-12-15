@@ -4,8 +4,15 @@ var colora
 var speed = 100.0
 var illuminated = false
 signal interactuar
+var cotact_ligth: Array
 func _ready():
 	$AnimatedSprite2D.play("static")
+	time_label.text = "Tiempo: 0.00"  # Inicializa el texto del Label
+var tiempo_restante: float = 10.0
+var temporizador_activado: bool = false
+
+@export var tiempo_total: float = 10.0  # Tiempo total en segundos
+@onready var time_label: Label = $CanvasLayer/TimerLabel  # Asegúrate de que el Label esté correctamente referenciado  
 
 func _physics_process(_delta):
 	var directiony = Input.get_axis("ui_up", "ui_down")
@@ -23,3 +30,34 @@ func _input(event):
 	if event.is_action_pressed("interactuar1"):
 		print("asdsd")
 		emit_signal("interactuar")
+
+func _process(delta: float) -> void:
+	if temporizador_activado:
+		# Resta el tiempo del temporizador
+		tiempo_restante -= delta
+
+		# Actualiza el texto del Label
+		time_label.text = str(round(tiempo_restante * 100) / 100)
+
+		# Verifica si el tiempo ha llegado a cero
+		if tiempo_restante <= 0:
+			detener_temporizador()
+	verificar_condiciones()
+
+# Función para activar el temporizador
+func activar_temporizador():
+	if !temporizador_activado:
+		temporizador_activado = true
+
+# Función para detener el temporizador
+func detener_temporizador():
+	temporizador_activado = false
+	time_label.text = "Don´t Touch the shadow"  # Opcionalmente, puedes resetear el texto a cero
+
+# Función para verificar condiciones (puedes modificar esto según tus necesidades)
+func verificar_condiciones():
+	# Por ejemplo, si se cumple una condición específica:
+	if !illuminated:
+		activar_temporizador()
+	else:
+		detener_temporizador()
