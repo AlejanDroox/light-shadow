@@ -63,5 +63,13 @@ func _on_area_2d_body_exited(body):
 		print("salio del rango de una luz")
 func off_with_player():
 	if playera:
+		if check_others_lights():
 			playera.illuminated = !playera.illuminated
+
+func check_others_lights():
+	"""Comprueba si hay otras luces dandole al player aparte de si misma"""
+	for light in playera.cotact_ligth:
+		if light != self.get_instance_id():
+			return false
+		return true
 		

@@ -19,7 +19,6 @@ func _on_area_2d_body_entered(body:CharacterBody2D):
 func accion():
 	
 	for light in lights:
-		print(light)
 		if light:
 			light.enabled = !light.enabled
 			light.off_with_player()
