@@ -1,7 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://ct84aa2thke2d"]
+[gd_scene load_steps=10 format=3 uid="uid://ct84aa2thke2d"]
 
 [ext_resource type="Script" path="res://PLayer/player_light.gd" id="1_1hd5v"]
 [ext_resource type="Texture2D" uid="uid://p2rxau2ifmmb" path="res://assets/characters/shadow_static.png" id="2_xpx40"]
+[ext_resource type="Texture2D" uid="uid://gdwxitc635c3" path="res://assets/characters/sprite_shadow.png" id="3_74ita"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_abve2"]
 atlas = ExtResource("2_xpx40")
@@ -68,6 +69,15 @@ shape = SubResource("CircleShape2D_agv4w")
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="."]
 remote_path = NodePath("..")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(0.249998, -4.75)
+scale = Vector2(0.585938, 0.570313)
+energy = 0.5
+texture = ExtResource("3_74ita")
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color(0.180005, 0.180005, 0.180005, 1)
 
 [connection signal="hidden" from="LightOccluder2D" to="." method="_on_light_occluder_2d_hidden"]
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

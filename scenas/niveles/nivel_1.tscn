@@ -101,126 +101,166 @@ tile_set = ExtResource("2_4f8wq")
 
 [node name="interruptores" type="Node" parent="."]
 
-[node name="interruptorA1" parent="interruptores" instance=ExtResource("4_56oem")]
+[node name="interruptorA1" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
 position = Vector2(455, 142)
+lights = [NodePath("../../lights/lightA2"), NodePath("../../lights/lightA3"), NodePath("../../lights/lightA4")]
 
-[node name="interruptorA2" parent="interruptores" instance=ExtResource("4_56oem")]
+[node name="interruptorA2" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
 position = Vector2(220, 135)
+lights = [NodePath("../../lights/lightA2"), NodePath("../../lights/lightA3"), NodePath("../../lights/lightA4")]
 
-[node name="interruptorA3" parent="interruptores" instance=ExtResource("4_56oem")]
+[node name="interruptorA3" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
 position = Vector2(390, 50)
+lights = [NodePath("../../lights/lightA2"), NodePath("../../lights/lightA3"), NodePath("../../lights/lightA4")]
 
-[node name="interruptorA4" parent="interruptores" instance=ExtResource("4_56oem")]
+[node name="interruptorA4" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
 position = Vector2(324, 377)
 rotation = 1.309
+lights = [NodePath("../../lights/lightA2"), NodePath("../../lights/lightA3"), NodePath("../../lights/lightA4")]
 
-[node name="interruptorB1" parent="interruptores" instance=ExtResource("4_56oem")]
+[node name="interruptorB1" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
 position = Vector2(367, 26)
+lights = [NodePath("../../lights/lightB1"), NodePath("../../lights/lightB2")]
 
-[node name="interruptorB2" parent="interruptores" instance=ExtResource("4_56oem")]
+[node name="interruptorB2" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
 position = Vector2(229, -58)
+lights = [NodePath("../../lights/lightB1"), NodePath("../../lights/lightB2")]
 
-[node name="interruptorC1" parent="interruptores" instance=ExtResource("4_56oem")]
+[node name="interruptorC1" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
 position = Vector2(312, 334)
+lights = [NodePath("../../lights/lightC1"), NodePath("../../lights/lightC2"), NodePath("../../lights/lightC3"), NodePath("../../lights/lightC4")]
 
-[node name="interruptorC2" parent="interruptores" instance=ExtResource("4_56oem")]
+[node name="interruptorC2" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
 position = Vector2(-130, 314)
+lights = [NodePath("../../lights/lightC1"), NodePath("../../lights/lightC2"), NodePath("../../lights/lightC3"), NodePath("../../lights/lightC4")]
 
-[node name="interruptorC3" parent="interruptores" instance=ExtResource("4_56oem")]
+[node name="interruptorC3" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
 position = Vector2(167, 393)
+lights = [NodePath("../../lights/lightC1"), NodePath("../../lights/lightC2"), NodePath("../../lights/lightC3"), NodePath("../../lights/lightC4")]
 
-[node name="interruptorD1" parent="interruptores" instance=ExtResource("4_56oem")]
+[node name="interruptorD1" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
 position = Vector2(112, 85)
+lights = [NodePath("../../lights/lightD1"), NodePath("../../lights/lightD2"), NodePath("../../lights/lightD3"), NodePath("../../lights/lightD4"), NodePath("../../lights/lightD5")]
 
-[node name="interruptorD2" parent="interruptores" instance=ExtResource("4_56oem")]
+[node name="interruptorD2" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
 position = Vector2(-55, -59)
+lights = [NodePath("../../lights/lightD1"), NodePath("../../lights/lightD2"), NodePath("../../lights/lightD3"), NodePath("../../lights/lightD4"), NodePath("../../lights/lightD5")]
 
-[node name="interruptorD3" parent="interruptores" instance=ExtResource("4_56oem")]
+[node name="interruptorD3" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
 position = Vector2(211, -19)
+lights = [NodePath("../../lights/lightD1"), NodePath("../../lights/lightD2"), NodePath("../../lights/lightD3"), NodePath("../../lights/lightD4"), NodePath("../../lights/lightD5")]
 
-[node name="interruptorD4" parent="interruptores" instance=ExtResource("4_56oem")]
+[node name="interruptorD4" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
 position = Vector2(148, -251)
+lights = [NodePath("../../lights/lightD1"), NodePath("../../lights/lightD2"), NodePath("../../lights/lightD3"), NodePath("../../lights/lightD4"), NodePath("../../lights/lightD5")]
 
-[node name="interruptorE1" parent="interruptores" instance=ExtResource("4_56oem")]
+[node name="interruptorE1" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
 position = Vector2(67, 66)
+lights = [NodePath("../../lights/lightE1"), NodePath("../../lights/lightE2"), NodePath("../../lights/lightE3"), NodePath("../../lights/lightE4"), NodePath("../../lights/lightE5")]
 
-[node name="interruptorE2" parent="interruptores" instance=ExtResource("4_56oem")]
+[node name="interruptorE2" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
 position = Vector2(241, 207)
+lights = [NodePath("../../lights/lightE1"), NodePath("../../lights/lightE2"), NodePath("../../lights/lightE3"), NodePath("../../lights/lightE4"), NodePath("../../lights/lightE5")]
 
-[node name="interruptorE3" parent="interruptores" instance=ExtResource("4_56oem")]
+[node name="interruptorE3" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
 position = Vector2(-69, 150)
+lights = [NodePath("../../lights/lightE1"), NodePath("../../lights/lightE2"), NodePath("../../lights/lightE3"), NodePath("../../lights/lightE4"), NodePath("../../lights/lightE5")]
 
-[node name="interruptorF1" parent="interruptores" instance=ExtResource("4_56oem")]
+[node name="interruptorF1" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
 position = Vector2(168, 419)
+lights = [NodePath("../../lights/lightF1"), NodePath("../../lights/lightF2"), NodePath("../../lights/lightF3"), NodePath("../../lights/lightF4")]
 
-[node name="interruptorF2" parent="interruptores" instance=ExtResource("4_56oem")]
+[node name="interruptorF2" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
 position = Vector2(-224, 515)
+lights = [NodePath("../../lights/lightF1"), NodePath("../../lights/lightF2"), NodePath("../../lights/lightF3"), NodePath("../../lights/lightF4")]
 
-[node name="interruptorG1" parent="interruptores" instance=ExtResource("4_56oem")]
+[node name="interruptorG1" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
 position = Vector2(-225, 473)
+lights = [NodePath("../../lights/lightG1"), NodePath("../../lights/lightG2"), NodePath("../../lights/lightG3"), NodePath("../../lights/lightG4"), NodePath("../../lights/lightG5"), NodePath("../../lights/lightG6"), NodePath("../../lights/lightG7"), NodePath("../../lights/lightG8"), NodePath("../../lights/lightG9"), null]
 
-[node name="interruptorG2" parent="interruptores" instance=ExtResource("4_56oem")]
+[node name="interruptorG2" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
 position = Vector2(-228, 360)
+lights = [NodePath("../../lights/lightG1"), NodePath("../../lights/lightG2"), NodePath("../../lights/lightG3"), NodePath("../../lights/lightG4"), NodePath("../../lights/lightG5"), NodePath("../../lights/lightG6"), NodePath("../../lights/lightG7"), NodePath("../../lights/lightG8"), NodePath("../../lights/lightG9")]
 
-[node name="interruptorG3" parent="interruptores" instance=ExtResource("4_56oem")]
+[node name="interruptorG3" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
 position = Vector2(-621, 388)
+lights = [NodePath("../../lights/lightG1"), NodePath("../../lights/lightG2"), NodePath("../../lights/lightG3"), NodePath("../../lights/lightG4"), NodePath("../../lights/lightG5"), NodePath("../../lights/lightG6"), NodePath("../../lights/lightG7"), NodePath("../../lights/lightG8"), NodePath("../../lights/lightG9")]
 
-[node name="interruptorH1" parent="interruptores" instance=ExtResource("4_56oem")]
+[node name="interruptorH1" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
 position = Vector2(-661, 378)
+lights = [NodePath("../../lights/lightH1"), NodePath("../../lights/lightH2"), NodePath("../../lights/lightH3"), NodePath("../../lights/lightH4"), NodePath("../../lights/lightH5"), null]
 
-[node name="interruptorH2" parent="interruptores" instance=ExtResource("4_56oem")]
+[node name="interruptorH2" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
 position = Vector2(-499, 293)
+lights = [NodePath("../../lights/lightH1"), NodePath("../../lights/lightH2"), NodePath("../../lights/lightH3"), NodePath("../../lights/lightH4"), NodePath("../../lights/lightH5")]
 
-[node name="interruptorH3" parent="interruptores" instance=ExtResource("4_56oem")]
+[node name="interruptorH3" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
 position = Vector2(-693, 180)
+lights = [NodePath("../../lights/lightH1"), NodePath("../../lights/lightH2"), NodePath("../../lights/lightH3"), NodePath("../../lights/lightH4"), NodePath("../../lights/lightH5")]
 
-[node name="interruptorH4" parent="interruptores" instance=ExtResource("4_56oem")]
+[node name="interruptorH4" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
 position = Vector2(-597, 40)
+lights = [NodePath("../../lights/lightH1"), NodePath("../../lights/lightH2"), NodePath("../../lights/lightH3"), NodePath("../../lights/lightH4")]
 
-[node name="interruptorI1" parent="interruptores" instance=ExtResource("4_56oem")]
+[node name="interruptorI1" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
 position = Vector2(-88, 295)
+lights = [NodePath("../../lights/lightI1"), NodePath("../../lights/lightI2"), NodePath("../../lights/lightI3"), NodePath("../../lights/lightI4"), NodePath("../../lights/lightI5")]
 
-[node name="interruptorI2" parent="interruptores" instance=ExtResource("4_56oem")]
+[node name="interruptorI2" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
 position = Vector2(-65, 108)
+lights = [NodePath("../../lights/lightI1"), NodePath("../../lights/lightI2"), NodePath("../../lights/lightI3"), NodePath("../../lights/lightI4"), NodePath("../../lights/lightI5")]
 
-[node name="interruptorI3" parent="interruptores" instance=ExtResource("4_56oem")]
+[node name="interruptorI3" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
 position = Vector2(-576, -2)
+lights = [NodePath("../../lights/lightI1"), NodePath("../../lights/lightI2"), NodePath("../../lights/lightI3"), NodePath("../../lights/lightI4"), NodePath("../../lights/lightI5")]
 
-[node name="interruptorI4" parent="interruptores" instance=ExtResource("4_56oem")]
+[node name="interruptorI4" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
 position = Vector2(-495, -60)
+lights = [NodePath("../../lights/lightI1"), NodePath("../../lights/lightI2"), NodePath("../../lights/lightI3"), NodePath("../../lights/lightI4"), NodePath("../../lights/lightI5")]
 
-[node name="interruptorJ1" parent="interruptores" instance=ExtResource("4_56oem")]
+[node name="interruptorJ1" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
 position = Vector2(-142, 289)
+lights = [NodePath("../../lights/lightJ1"), NodePath("../../lights/lightJ2"), NodePath("../../lights/lightJ3"), NodePath("../../lights/lightJ4")]
 
-[node name="interruptorJ2" parent="interruptores" instance=ExtResource("4_56oem")]
+[node name="interruptorJ2" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
 position = Vector2(-484, 250)
+lights = [NodePath("../../lights/lightJ1"), NodePath("../../lights/lightJ2"), NodePath("../../lights/lightJ3"), NodePath("../../lights/lightJ4")]
 
-[node name="interruptorK1" parent="interruptores" instance=ExtResource("4_56oem")]
+[node name="interruptorK1" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
 position = Vector2(-52, -17)
+lights = [NodePath("../../lights/lightK1"), NodePath("../../lights/lightK2"), NodePath("../../lights/lightK3"), NodePath("../../lights/lightK4")]
 
-[node name="interruptorK2" parent="interruptores" instance=ExtResource("4_56oem")]
+[node name="interruptorK2" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
 position = Vector2(-451, -64)
+lights = [NodePath("../../lights/lightK1"), NodePath("../../lights/lightK2"), NodePath("../../lights/lightK3"), NodePath("../../lights/lightK4")]
 
-[node name="interruptorL1" parent="interruptores" instance=ExtResource("4_56oem")]
+[node name="interruptorL1" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
 position = Vector2(151, -212)
+lights = [NodePath("../../lights/lightL1"), NodePath("../../lights/lightL3"), NodePath("../../lights/lightL2"), NodePath("../../lights/lightL4"), NodePath("../../lights/lightL5"), NodePath("../../lights/lightL6")]
 
-[node name="interruptorL2" parent="interruptores" instance=ExtResource("4_56oem")]
+[node name="interruptorL2" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
 position = Vector2(-452, -195)
+lights = [NodePath("../../lights/lightL1"), NodePath("../../lights/lightL2"), NodePath("../../lights/lightL3"), NodePath("../../lights/lightL3"), NodePath("../../lights/lightL4"), NodePath("../../lights/lightL5")]
 
-[node name="interruptorM1" parent="interruptores" instance=ExtResource("4_56oem")]
+[node name="interruptorM1" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
 position = Vector2(-495, -198)
+lights = [NodePath("../../lights/lightM1"), NodePath("../../lights/lightM2"), NodePath("../../lights/lightM3"), NodePath("../../lights/lightM4"), NodePath("../../lights/lightM5"), NodePath("../../lights/lightM6")]
 
-[node name="interruptorM2" parent="interruptores" instance=ExtResource("4_56oem")]
+[node name="interruptorM2" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
 position = Vector2(-913, -59)
+lights = [NodePath("../../lights/lightM1"), NodePath("../../lights/lightM2"), NodePath("../../lights/lightM3"), NodePath("../../lights/lightM5"), NodePath("../../lights/lightM4"), NodePath("../../lights/lightM6")]
 
-[node name="interruptorM3" parent="interruptores" instance=ExtResource("4_56oem")]
+[node name="interruptorM3" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
 position = Vector2(-495, -78)
+lights = [NodePath("../../lights/lightM3"), NodePath("../../lights/lightM2"), NodePath("../../lights/lightM1"), NodePath("../../lights/lightM4"), NodePath("../../lights/lightM5"), NodePath("../../lights/lightM6")]
 
-[node name="interruptorN1" parent="interruptores" instance=ExtResource("4_56oem")]
+[node name="interruptorN1" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
 position = Vector2(-692, 82)
+lights = [NodePath("../../lights/lightN1"), NodePath("../../lights/lightN3"), NodePath("../../lights/lightN2"), NodePath("../../lights/lightN4"), NodePath("../../lights/lightN5"), NodePath("../../lights/lightN6"), NodePath("../../lights/lightN7"), NodePath("../../lights/lightN8"), NodePath("../../lights/lightN9"), NodePath("../../lights/lightN10"), NodePath("../../lights/lightN11"), NodePath("../../lights/lightN12"), NodePath("../../lights/lightN13"), NodePath("../../lights/lightN14")]
 
-[node name="interruptorN2" parent="interruptores" instance=ExtResource("4_56oem")]
-position = Vector2(-843, -60)
+[node name="interruptorN3" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
+position = Vector2(-842, -61)
+lights = [NodePath("../../lights/lightN1"), NodePath("../../lights/lightN3"), NodePath("../../lights/lightN2"), NodePath("../../lights/lightN4"), NodePath("../../lights/lightN5"), NodePath("../../lights/lightN6"), NodePath("../../lights/lightN7"), NodePath("../../lights/lightN8"), NodePath("../../lights/lightN9"), NodePath("../../lights/lightN10"), NodePath("../../lights/lightN11"), NodePath("../../lights/lightN12"), NodePath("../../lights/lightN13"), NodePath("../../lights/lightN14")]
 
 [node name="interruptorO1" parent="interruptores" node_paths=PackedStringArray("lights") instance=ExtResource("4_56oem")]
 position = Vector2(-1261, 425)

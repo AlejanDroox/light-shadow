@@ -1,0 +1,40 @@
+[gd_scene load_steps=5 format=3 uid="uid://cb5ph2pq30u6k"]
+
+[ext_resource type="Texture2D" uid="uid://c15bdubnhur5s" path="res://assets/Canvas_2.png" id="1_58nqv"]
+[ext_resource type="Script" path="res://scenas/menu.gd" id="1_qvxoc"]
+[ext_resource type="Texture2D" uid="uid://dxtcwfhd3irkv" path="res://assets/Credits.png" id="3_b06xx"]
+[ext_resource type="Texture2D" uid="uid://sreuqi0j0fub" path="res://assets/Play.png" id="4_2xjn3"]
+
+[node name="Menu" type="Node2D"]
+script = ExtResource("1_qvxoc")
+
+[node name="Canvas2" type="Sprite2D" parent="."]
+position = Vector2(580, 329.5)
+scale = Vector2(0.608333, 0.608333)
+texture = ExtResource("1_58nqv")
+
+[node name="Credits" type="Sprite2D" parent="."]
+position = Vector2(155, 566)
+scale = Vector2(0.484375, 0.484375)
+texture = ExtResource("3_b06xx")
+
+[node name="Play" type="Sprite2D" parent="."]
+position = Vector2(980.734, 566.75)
+scale = Vector2(0.482422, 0.482422)
+texture = ExtResource("4_2xjn3")
+
+[node name="Button" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+offset_left = 20.0
+offset_top = 504.0
+offset_right = 291.0
+offset_bottom = 628.0
+
+[node name="Button2" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+offset_left = 844.0
+offset_top = 504.0
+offset_right = 1115.0
+offset_bottom = 628.0
+
+[connection signal="pressed" from="Button2" to="." method="_on_Button_pressed"]
