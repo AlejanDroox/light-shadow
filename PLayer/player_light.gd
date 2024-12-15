@@ -4,6 +4,7 @@ var colora
 var speed = 100.0
 var illuminated = false
 signal interactuar
+@export var spwan: Marker2D
 @export var tiempo_total: float = 10.0  # Tiempo total en segundos
 @export var time_label: Label 
 var cotact_ligth: Array
@@ -59,3 +60,8 @@ func verificar_condiciones():
 		activar_temporizador()
 	else:
 		detener_temporizador()
+func respawn():
+	global_position = spwan.global_position
+	tiempo_restante = 10.0
+	
+	

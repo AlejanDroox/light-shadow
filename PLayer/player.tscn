@@ -1,8 +1,7 @@
-[gd_scene load_steps=15 format=3 uid="uid://bov30unw1c0ou"]
+[gd_scene load_steps=13 format=3 uid="uid://bov30unw1c0ou"]
 
 [ext_resource type="Script" path="res://character_body_2d.gd" id="1_4bbtw"]
 [ext_resource type="Texture2D" uid="uid://cg4brlg0gjhlb" path="res://assets/characters/output-onlinegiftools.png" id="4_y7q6x"]
-[ext_resource type="FontFile" uid="uid://glg5tjrj76cr" path="res://assets/FRESHFACE.ttf" id="5_7jrbf"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1wn2m"]
 atlas = ExtResource("4_y7q6x")
@@ -64,13 +63,6 @@ polygon = PackedVector2Array(-11, 12, 11, 12, 19, -17, -19, -16)
 [sub_resource type="CircleShape2D" id="CircleShape2D_agv4w"]
 radius = 12.0
 
-[sub_resource type="LabelSettings" id="LabelSettings_mlhou"]
-font = ExtResource("5_7jrbf")
-font_size = 20
-font_color = Color(1, 0.0901961, 0.266667, 0.8)
-outline_size = 1
-outline_color = Color(0.0627451, 0.164706, 0.384314, 0.807843)
-
 [node name="player_shadow" type="CharacterBody2D" groups=["players"]]
 collision_layer = 5
 script = ExtResource("1_4bbtw")
@@ -107,16 +99,6 @@ shape = SubResource("CircleShape2D_agv4w")
 remote_path = NodePath("..")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="TimerLabel" type="Label" parent="CanvasLayer"]
-z_index = 2
-texture_filter = 1
-offset_left = 7.0
-offset_top = 9.0
-offset_right = 227.0
-offset_bottom = 37.0
-text = "Don´t Touch the shadow"
-label_settings = SubResource("LabelSettings_mlhou")
 
 [connection signal="hidden" from="LightOccluder2D" to="." method="_on_light_occluder_2d_hidden"]
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

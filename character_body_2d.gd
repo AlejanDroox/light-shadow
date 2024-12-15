@@ -10,9 +10,9 @@ func _ready():
 	time_label.text = "Tiempo: 0.00"  # Inicializa el texto del Label
 var tiempo_restante: float = 10.0
 var temporizador_activado: bool = false
-
+@export var spwan: Marker2D
 @export var tiempo_total: float = 10.0  # Tiempo total en segundos
-@onready var time_label: Label = $CanvasLayer/TimerLabel  # Asegúrate de que el Label esté correctamente referenciado  
+@export var time_label: Label
 
 func _physics_process(_delta):
 	var directiony = Input.get_axis("ui_up", "ui_down")
@@ -42,6 +42,7 @@ func _process(delta: float) -> void:
 		# Verifica si el tiempo ha llegado a cero
 		if tiempo_restante <= 0:
 			detener_temporizador()
+			respawn()
 	verificar_condiciones()
 
 # Función para activar el temporizador
@@ -59,3 +60,7 @@ func verificar_condiciones():
 		activar_temporizador()
 	else:
 		detener_temporizador()
+
+func respawn():
+	global_position = spwan.global_position
+	tiempo_restante = 10.0
