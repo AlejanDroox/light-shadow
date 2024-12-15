@@ -1,5 +1,5 @@
 extends CharacterBody2D
-class_name player
+class_name player2
 var colora
 var speed = 100.0
 var illuminated = false
@@ -15,8 +15,8 @@ var temporizador_activado: bool = false
 @onready var time_label: Label = $CanvasLayer/TimerLabel  # Asegúrate de que el Label esté correctamente referenciado  
 
 func _physics_process(_delta):
-	var directiony = Input.get_axis("ui_up", "ui_down")
-	var directionx = Input.get_axis("ui_left", "ui_right")
+	var directiony = Input.get_axis("mov_up", "mov_down")
+	var directionx = Input.get_axis("mov_left", "mov_rigth")
 	if directionx:
 		velocity.x = directionx * speed
 	else:
@@ -27,7 +27,7 @@ func _physics_process(_delta):
 		velocity.y = move_toward(velocity.y, 0, speed)
 	move_and_slide()
 func _input(event):
-	if event.is_action_pressed("interactuar1"):
+	if event.is_action_pressed("interactuar2"):
 		print("asdsd")
 		emit_signal("interactuar")
 
@@ -52,12 +52,10 @@ func activar_temporizador():
 # Función para detener el temporizador
 func detener_temporizador():
 	temporizador_activado = false
-	time_label.text = "Don´t Touch the shadow"  # Opcionalmente, puedes resetear el texto a cero
+	time_label.text = "Don´t Touch the Light"  # Opcionalmente, puedes resetear el texto a cero
 
-# Función para verificar condiciones (puedes modificar esto según tus necesidades)
 func verificar_condiciones():
-	# Por ejemplo, si se cumple una condición específica:
-	if !illuminated:
+	if illuminated:
 		activar_temporizador()
 	else:
 		detener_temporizador()

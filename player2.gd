@@ -1,5 +1,5 @@
 extends CharacterBody2D
-class_name player2
+class_name player2odl
 var colora
 var speed = 100.0
 signal interactuar
