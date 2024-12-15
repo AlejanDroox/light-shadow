@@ -71,7 +71,7 @@ font_color = Color(1, 0.0901961, 0.266667, 0.8)
 outline_size = 1
 outline_color = Color(0.0627451, 0.164706, 0.384314, 0.807843)
 
-[node name="player_shadow" type="CharacterBody2D"]
+[node name="player_shadow" type="CharacterBody2D" groups=["players"]]
 collision_layer = 5
 script = ExtResource("1_4bbtw")
 

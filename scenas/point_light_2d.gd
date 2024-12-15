@@ -40,8 +40,8 @@ func _on_timer_timeout():
 		timer.stop()
 
 
-func _on_area_2d_body_entered(body:player):
-	if body is player and enabled:
+func _on_area_2d_body_entered(body):
+	if body is player or body is player2 and enabled:
 		print(body.cotact_ligth)
 		body.cotact_ligth.append(get_instance_id())
 		if body.illuminated:

@@ -14,6 +14,7 @@ shadow_enabled = true
 shadow_filter_smooth = 3.2
 texture = ExtResource("1_va1c0")
 script = ExtResource("2_8p0ci")
+collision_layer_to_check = null
 
 [node name="Area2D" type="Area2D" parent="."]
 collision_layer = 4

@@ -71,6 +71,8 @@ position = Vector2(834, 204)
 
 [node name="light" parent="." instance=ExtResource("5_d7fuh")]
 position = Vector2(877, 303)
+collision_layer_to_check = null
 
 [node name="light2" parent="." instance=ExtResource("5_d7fuh")]
 position = Vector2(670, 297)
+collision_layer_to_check = null
