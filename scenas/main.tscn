@@ -38,4 +38,11 @@ stream = ExtResource("7_uoc0c")
 [node name="Musica_Juego" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("6_vpo0p")
 
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Polygon2D" type="Polygon2D" parent="CanvasLayer"]
+position = Vector2(0, 322)
+color = Color(0, 0, 1, 1)
+polygon = PackedVector2Array(-1, -2, 1154, -2, 1154, 14, -2, 14)
+
 [connection signal="finished" from="Musica_Juego" to="." method="_on_musica_juego_finished"]
