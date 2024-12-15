@@ -58,21 +58,17 @@ tile_map_data = PackedByteArray("AAACAP//AAADAAMAAAACAAAAAAADAAMAAAACAAEAAAADAAM
 tile_set = SubResource("TileSet_e5t5b")
 use_kinematic_bodies = true
 
-[node name="interruptor2" parent="." node_paths=PackedStringArray("lights") instance=ExtResource("2_8qgnx")]
+[node name="interruptor2" parent="." instance=ExtResource("2_8qgnx")]
 position = Vector2(694, 216)
-lights = [NodePath("../light2")]
 
-[node name="interruptor" parent="." node_paths=PackedStringArray("lights") instance=ExtResource("2_8qgnx")]
+[node name="interruptor" parent="." instance=ExtResource("2_8qgnx")]
 position = Vector2(752, 238)
-lights = [NodePath("../light")]
 
 [node name="player_shadow" parent="." instance=ExtResource("4_v1jrt")]
 position = Vector2(834, 204)
 
 [node name="light" parent="." instance=ExtResource("5_d7fuh")]
 position = Vector2(877, 303)
-collision_layer_to_check = null
 
 [node name="light2" parent="." instance=ExtResource("5_d7fuh")]
 position = Vector2(670, 297)
-collision_layer_to_check = null
