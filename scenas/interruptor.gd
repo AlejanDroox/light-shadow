@@ -18,13 +18,11 @@ func _on_area_2d_body_entered(body:CharacterBody2D):
 
 
 func accion():
-	
+	$Sprite2D.flip_v = !$Sprite2D
 	for light in lights:
 		if light:
 			light.enabled = !light.enabled
 			light.off_with_player()
-
-
 
 func _on_area_2d_body_exited(body):
 	if body is player or body is player2:
